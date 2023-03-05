@@ -16,7 +16,7 @@ import FpcLogoSmallPng from '../branding/FpcLogoSmallPng.png';
 
 const Spa1 = () => (
     <Grid
-        templateRows="repeat(6, 1fr)"
+        templateRows="repeat(7, 1fr)"
         templateColumns="repeat(10, 1fr)"
         h="calc(100vh)"
         w="100%"
@@ -43,16 +43,16 @@ const Spa1 = () => (
         >
             <HStack>
                 <Button size="10px">
-                    <SocialIcon network="facebook" bgColor="white" style={{height: 30, width: 30}} />
+                    <SocialIcon network="facebook" bgColor="red" style={{height: 30, width: 30}} />
                 </Button>
                 <Button size="10px">
-                    <SocialIcon network="facebook" bgColor="white" style={{height: 30, width: 30}} />
+                    <SocialIcon network="twitter" bgColor="red" style={{height: 30, width: 30}} />
                 </Button>
                 <Button size="10px">
-                    <SocialIcon network="facebook" bgColor="white" style={{height: 30, width: 30}} />
+                    <SocialIcon network="youtube" bgColor="red" style={{height: 30, width: 30}} />
                 </Button>
                 <Button size="10px">
-                    <SocialIcon network="facebook" bgColor="white" style={{height: 30, width: 30}} />
+                    <SocialIcon network="linkedin" bgColor="red" style={{height: 30, width: 30}} />
                 </Button>
             </HStack>
         </GridItem>
@@ -60,28 +60,34 @@ const Spa1 = () => (
             rowStart={3}
             rowSpan={2}
             colStart={4}
-            colSpan={4}
+            colSpan={5}
         >
             <VStack>
                 <Heading
                     color="red"
+                    fontFamily="BouchersSans2"
+                    fontSize="100px"
                 >
                     Citizens.
                 </Heading>
                 <Heading
                     color="white"
+                    fontFamily="BouchersSans2"
+                    fontSize="100px"
                 >
                     Not Subjects.
                 </Heading>
             </VStack>
             <Heading
                 color="white"
+                fontFamily="circularBold"
             >
                 Welcome to Firearms Policy Campaign
             </Heading>
             <Text
                 color="white"
                 align="center"
+                fontSize="30px"
             >
                 As an unapologetic, dynamic, and energetic pro-firearm
                 entity, we aim to become the go-to source for firearm policy

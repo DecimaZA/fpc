@@ -14,7 +14,7 @@ const Spa2 = () => (
         w="100%"
     >
         <GridItem
-            rowStart={1}
+            rowStart={2}
             colStart={1}
             colSpan={6}
         >
@@ -22,9 +22,10 @@ const Spa2 = () => (
                 <VStack>
                     <Text
                         as="b"
+                        fontFamily="circularBold"
                     >
                         We are partnering with Firearms Guardian
-                        and a professional motivation writing firearms attorney
+                        and a professional firearms attorney for written motivations
                     </Text>
                     <Text>
                         Our standard subscription service fee is R99.00 per month, but you can tier up for more benefits!
@@ -49,20 +50,27 @@ const Spa2 = () => (
             </Grid>
         </GridItem>
         <GridItem
-            rowStart={4}
-            colStart={3}
+            rowStart={6}
+            colStart={2}
             colSpan={6}
         >
-            <Text>
+            <Text
+                fontFamily="circularBook"
+                fontSize="20px"
+            >
                 Motivations by a professional firearms attorney
                 will be at a discounted rate for FPC subscribers.
             </Text>
-            <Text>
+            <Text
+                fontFamily="circularBook"
+                fontSize="20px"
+            >
                 For more information regarding these rates, please contact us.
             </Text>
         </GridItem>
         <GridItem
             colStart={4}
+            rowStart={7}
         >
             PAYFAST PORTAL
         </GridItem>

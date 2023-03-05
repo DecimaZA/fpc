@@ -28,6 +28,31 @@
   color: #61dafb;
 }
 
+@font-face {
+  font-family: BouchersSans2;
+  src: url(./fonts/FontBouchersSans2.otf);
+}
+
+@font-face {
+  font-family: circularBold;
+  src: url(./fonts/circularBold.otf);
+}
+
+@font-face {
+  font-family: circularBook;
+  src: url(./fonts/circularBook.otf);
+}
+
+@font-face {
+  font-family: circularBookItalic;
+  src: url(./fonts/circularBookItalic.otf);
+}
+
+@font-face {
+  font-family: circularMedium;
+  src: url(./fonts/circularMedium.otf);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
