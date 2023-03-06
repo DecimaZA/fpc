@@ -43,13 +43,13 @@ const Spa1 = () => (
                     ABOUT
                 </Heading>
                 <Heading
-                    color="red"
+                    color="#f1564a"
                     fontFamily="BouchersSans2"
                 >
                     FIREARMS POLICY
                 </Heading>
                 <Heading
-                    color="red"
+                    color="#f1564a"
                     fontFamily="BouchersSans2"
                 >
                     CAMPAIGN

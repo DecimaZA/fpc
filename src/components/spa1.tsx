@@ -12,7 +12,7 @@ import {
 } from 'react-social-icons';
 
 import Spa1Image from '../branding/Spa1Image.jpg';
-import FpcLogoSmallPng from '../branding/FpcLogoSmallPng.png';
+import FpcLogoWhiteGun from '../branding/FpcLogoWhiteGun.png';
 
 const Spa1 = () => (
     <Grid
@@ -35,7 +35,7 @@ const Spa1 = () => (
             rowStart={2}
             colStart={2}
         >
-            <img src={FpcLogoSmallPng} alt="FPC logo .PNG" />
+            <img src={FpcLogoWhiteGun} alt="FPC logo .PNG" />
         </GridItem>
         <GridItem
             rowStart={2}
@@ -59,31 +59,31 @@ const Spa1 = () => (
         <GridItem
             rowStart={3}
             rowSpan={2}
-            colStart={4}
-            colSpan={5}
+            colStart={3}
+            colSpan={6}
         >
             <VStack>
                 <Heading
-                    color="red"
+                    color="#f1564a"
                     fontFamily="BouchersSans2"
-                    fontSize="100px"
+                    fontSize="150px"
                 >
                     Citizens.
                 </Heading>
                 <Heading
                     color="white"
                     fontFamily="BouchersSans2"
-                    fontSize="100px"
+                    fontSize="150px"
                 >
                     Not Subjects.
                 </Heading>
+                <Heading
+                    color="white"
+                    fontFamily="circularBold"
+                >
+                    Welcome to Firearms Policy Campaign
+                </Heading>
             </VStack>
-            <Heading
-                color="white"
-                fontFamily="circularBold"
-            >
-                Welcome to Firearms Policy Campaign
-            </Heading>
             <Text
                 color="white"
                 align="center"
