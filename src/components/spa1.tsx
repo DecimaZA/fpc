@@ -6,6 +6,8 @@ import {
     HStack,
     Text,
     Button,
+    Link,
+    Center,
 } from '@chakra-ui/react';
 import {
     SocialIcon,
@@ -42,58 +44,57 @@ const Spa1 = () => (
             colStart={9}
         >
             <HStack>
-                <Button size="10px">
-                    <SocialIcon network="facebook" bgColor="red" style={{height: 30, width: 30}} />
-                </Button>
-                <Button size="10px">
-                    <SocialIcon network="twitter" bgColor="red" style={{height: 30, width: 30}} />
-                </Button>
-                <Button size="10px">
-                    <SocialIcon network="youtube" bgColor="red" style={{height: 30, width: 30}} />
-                </Button>
-                <Button size="10px">
-                    <SocialIcon network="linkedin" bgColor="red" style={{height: 30, width: 30}} />
-                </Button>
+                <Link href="https://www.facebook.com/profile.php?id=100086423772401">
+                    <SocialIcon network="facebook" bgColor="white" style={{ height: 30, width: 30 }} />
+                </Link>
+                <Link href="https://twitter.com/FirearmPolicy">
+                    <SocialIcon network="twitter" bgColor="white" style={{ height: 30, width: 30 }} />
+                </Link>
+                <Link href="https://youtube.com">
+                    <SocialIcon network="youtube" bgColor="white" style={{ height: 30, width: 30 }} />
+                </Link>
             </HStack>
         </GridItem>
         <GridItem
-            rowStart={3}
+            rowStart={{base: 3}}
             rowSpan={2}
             colStart={3}
             colSpan={6}
         >
-            <VStack>
-                <Heading
-                    color="#f1564a"
-                    fontFamily="BouchersSans2"
-                    fontSize="150px"
-                >
-                    Citizens.
-                </Heading>
-                <Heading
-                    color="white"
-                    fontFamily="BouchersSans2"
-                    fontSize="150px"
-                >
-                    Not Subjects.
-                </Heading>
-                <Heading
-                    color="white"
-                    fontFamily="circularBold"
-                >
-                    Welcome to Firearms Policy Campaign
-                </Heading>
-            </VStack>
-            <Text
-                color="white"
-                align="center"
-                fontSize="30px"
-            >
-                As an unapologetic, dynamic, and energetic pro-firearm
-                entity, we aim to become the go-to source for firearm policy
-                in South Africa. Firearm owner or not, you can be the 'campaign'
-                in the Firearms Policy Campaign.
-            </Text>
+            <Center>
+                <VStack>
+                    <Heading
+                        color="#f1564a"
+                        fontFamily="BouchersSans2"
+                        fontSize="150px"
+                    >
+                        Citizens.
+                    </Heading>
+                    <Heading
+                        color="white"
+                        fontFamily="BouchersSans2"
+                        fontSize="150px"
+                    >
+                        Not Subjects.
+                    </Heading>
+                    <Heading
+                        color="white"
+                        fontFamily="circularBold"
+                    >
+                        Welcome to the Firearms Policy Campaign
+                    </Heading>
+                    <Text
+                        color="white"
+                        align="center"
+                        fontSize="30px"
+                    >
+                        As an unapologetic, dynamic, and energetic pro-firearm
+                        entity, we aim to become the go-to source for firearm policy
+                        in South Africa. Firearm owner or not, you can be the 'campaign'
+                        in the Firearms Policy Campaign.
+                    </Text>
+                </VStack>
+            </Center>
         </GridItem>
     </Grid>
 );
