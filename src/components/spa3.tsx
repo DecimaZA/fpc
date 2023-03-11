@@ -173,41 +173,53 @@ const Spa1 = () => (
         <GridItem
             rowStart={6}
             colStart={2}
-            colEnd={5}
+            colEnd={6}
         >
             <Grid
                 templateRows="repeat(1, 1fr)"
                 templateColumns="repeat(6, 1fr)"
             >
                 <GridItem
+                    colStart={1}
+                >
+                    <Center>
+                        <Button borderRadius="100%" h="100px" w="100px">Sponsor 1</Button>
+                    </Center>
+                </GridItem>
+                <GridItem
                     colStart={2}
                 >
-                    <Button borderRadius="100%" h="100px" w="100px" />
+                    <Center>
+                        <Button borderRadius="100%" h="100px" w="100px">Sponsor 2</Button>
+                    </Center>
                 </GridItem>
                 <GridItem
                     colStart={3}
                 >
-                    <Button borderRadius="100%" h="100px" w="100px" />
+                    <Center>
+                        <Button borderRadius="100%" h="100px" w="100px">Sponsor 3</Button>
+                    </Center>
                 </GridItem>
                 <GridItem
                     colStart={4}
                 >
-                    <Button borderRadius="100%" h="100px" w="100px" />
+                    <Center>
+                        <Button borderRadius="100%" h="100px" w="100px">Sponsor 4</Button>
+                    </Center>
                 </GridItem>
                 <GridItem
                     colStart={5}
                 >
-                    <Button borderRadius="100%" h="100px" w="100px" />
+                    <Center>
+                        <Button borderRadius="100%" h="100px" w="100px">Sponsor 5</Button>
+                    </Center>
                 </GridItem>
                 <GridItem
                     colStart={6}
                 >
-                    <Button borderRadius="100%" h="100px" w="100px" />
-                </GridItem>
-                <GridItem
-                    colStart={7}
-                >
-                    <Button borderRadius="100%" h="100px" w="100px" />
+                    <Center>
+                        <Button borderRadius="100%" h="100px" w="100px">Sponsor 6</Button>
+                    </Center>
                 </GridItem>
             </Grid>
         </GridItem>

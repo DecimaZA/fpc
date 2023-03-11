@@ -134,6 +134,7 @@ const Spa1 = () => (
         >
             <Center
                 h="100%"
+                w="0%"
             >
                 <Button
                     size="15px"
