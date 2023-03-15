@@ -17,11 +17,13 @@ import {
 import {
     ArrowSquareDown,
 } from 'iconsax-react';
+import React, { useRef } from 'react';
 
 import Spa1Image from '../branding/Spa1Image.jpg';
 import FpcLogoWhiteGun from '../branding/FpcLogoWhiteGun.png';
 
 const Spa1 = () => (
+
     <Grid
         templateRows="repeat(6, 1fr)"
         templateColumns="repeat(6, 1fr)"
@@ -38,14 +40,18 @@ const Spa1 = () => (
         </GridItem>
         <GridItem 
             rowStart={1}
-            h={{base: "20px", sm: "20px", md: "20px", lg: "20px", xl: "20px", }}
+            h={{base:
+                "1rem", sm: "1rem", md: "1rem", lg: "1rem", xl: "1rem",
+            }}
         />
         <GridItem
-            rowStart={{base: 2,}}
+            rowStart={{
+                base: 2,
+            }}
             colStart={2}
         >
             <AspectRatio
-                maxW="150px"
+                maxW="8rem"
                 ratio={4 / 3}
             >
                 <Image
@@ -62,20 +68,24 @@ const Spa1 = () => (
                 justifyContent="right"
             >
                 <Link href="https://www.facebook.com/profile.php?id=100086423772401">
-                    <SocialIcon network="facebook" bgColor="white" style={{ height: 30, width: 30 }} />
+                    <SocialIcon network="facebook" bgColor="white" style={{ height: "2rem", width: "2rem" }} />
                 </Link>
                 <Link href="https://twitter.com/FirearmPolicy">
-                    <SocialIcon network="twitter" bgColor="white" style={{ height: 30, width: 30 }} />
+                    <SocialIcon network="twitter" bgColor="white" style={{ height: "2rem", width: "2rem" }} />
                 </Link>
                 <Link href="https://youtube.com">
-                    <SocialIcon network="youtube" bgColor="white" style={{ height: 30, width: 30 }} />
+                    <SocialIcon network="youtube" bgColor="white" style={{ height: "2rem", width: "2rem" }} />
                 </Link>
             </HStack>
         </GridItem>
         <GridItem
             rowStart={3}
-            colStart={{base: 3, sm: 3, md: 2, lg: 2,}}
-            colSpan={{base: 2, sm: 2, md: 4, lg: 4,}}
+            colStart={{
+                base: 1, sm: 1, md: 2, lg: 1, xl: 1,
+            }}
+            colSpan={{
+                base: 6, sm: 6, md: 4, lg: 6, xl: 6,
+            }}
         >
             <VStack
                 alignContent="middle"
@@ -85,7 +95,7 @@ const Spa1 = () => (
                     color="#f1564a"
                     fontFamily="BouchersSans2"
                     fontSize={{
-                        base: "25", sm: "25px", md: "50", lg: "80", xl: "120px",
+                        base: "2rem", sm: "2rem", md: "4rem", lg: "6rem", xl: "6rem",
                     }}
                 >
                     Citizens.
@@ -95,7 +105,7 @@ const Spa1 = () => (
                     color="white"
                     fontFamily="BouchersSans2"
                     fontSize={{
-                        base: "25", sm: "25px", md: "50", lg: "80px", xl: "120px",
+                        base: "2rem", sm: "2rem", md: "4rem", lg: "6rem", xl: "6rem",
                     }}
                 >
                     Not Subjects.
@@ -103,7 +113,8 @@ const Spa1 = () => (
             </VStack>
         </GridItem>
         <GridItem
-            rowStart={{base: 5, sm: 4, md: 5, lg: 5, xl: 5,}}
+            paddingTop={{base: "0.5rem", sm: "0.5rem", md:"1rem", lg: "2rem", xl: "2rem",}}
+            rowStart={5}
             colStart={2}
             colEnd={6}
         >
@@ -112,14 +123,18 @@ const Spa1 = () => (
                     color="white"
                     fontFamily="circularBold"
                     textAlign="center"
-                    fontSize={{ base: "10px", sm: "10px", md: "20px", lg: "30px", }}
+                    fontSize={{
+                        base: "2rem", sm: "1rem", md: "2rem", lg: "2rem", xl: "2rem",
+                    }}
                 >
                     Welcome to the Firearms Policy Campaign
                 </Heading>
                 <Text
                     color="white"
                     textAlign="center"
-                    fontSize={{ base: "30px", sm: "10px", md: "20px", lg: "30px", }}
+                    fontSize={{
+                        base: "1rem", sm: "1rem", md: "1rem", lg: "1.5rem", xl: "1.5rem",
+                    }}
                 >
                     As an unapologetic, dynamic, and energetic pro-firearm
                     entity, we aim to become the go-to source for firearm policy
@@ -134,13 +149,12 @@ const Spa1 = () => (
         >
             <Center
                 h="100%"
-                w="0%"
-            >
+                w="0%">
                 <Button
-                    size="15px"
+                    size="1rem"
                     color="white"
                 >
-                    <ArrowSquareDown size="32" color="grey" />
+                    <ArrowSquareDown size="2rem" color="grey" />
                 </Button>
             </Center>
         </GridItem>
